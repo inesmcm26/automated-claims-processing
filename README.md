@@ -1,14 +1,14 @@
 # Insurance Claim Processing Pipeline
 
-An automated insurance claim processing system that analyzes claim submissions with supporting documents and makes intelligent coverage decisions using AI-powered document analysis and policy reasoning.
+An automated insurance claim processing system that analyzes claim submissions with supporting documents and makes intelligent coverage decisions using AI-powered document analysis, fraud detection and policy reasoning.
 
 ## Overview
 
 This system processes insurance claims by:
 - Accepting claim descriptions with supporting documents (images, medical certificates, receipts, etc.)
-- Extracting and analyzing text from documents using OCR
-- Evaluating claims against policy terms and coverage rules
+- Extracting and analyzing text from documents using OCR and LLMs
 - Detecting potential fraud indicators
+- Evaluating claims against policy terms and coverage rules
 - Making automated decisions: **APPROVED**, **DENIED**, or **UNCERTAIN**
 - Providing detailed reasoning for each decision
 
@@ -20,20 +20,20 @@ This system processes insurance claims by:
 - **OCR capabilities** using PaddleOCR for text extraction from images
 - **AI-powered analysis** using local LLM models via Ollama
 - **In-memory storage** for claim records and documents (should be replaced with database storage in production)
-- **Comprehensive evaluation** tools for benchmarking
+- **Evaluation** scripts for benchmarking
 
 ## Architecture
 
 The system uses a pipeline with specialized AI-powered steps:
-1. **Policy Section Identifier**: Identifies relevant policy sections
+1. **Policy Section Identifier**: Identifies relevant policy sections ans rules out out-of-scope claims
 2. **Document Processor**: Extracts text from images and documents using OCR
-3. **Document Analyzer**: Analyzes extracted content for key information
-4. **Fraud Detector**: Checks for suspicious patterns or inconsistencies
+3. **Document Analyzer**: Analyzes extracted text for key information
+4. **Fraud Detector**: Checks for suspicious patterns
 5. **Policy Reasoner**: Evaluates claims against policy terms
 
 Each step processes the output from a previous step, building up context until a final decision is made.
 
-For a full solution description and reasoning behind architectural decisions, see [SOLUTION.md](SOLUTION.md).
+Please check [SOLUTION.md](SOLUTION.md) for a full solution description and reasoning behind architectural decisions.
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Before setting up the project, ensure you have the following installed:
 
 ```bash
 git clone <repository-url>
-cd claim-processing-pipeline
+cd automated-claims-processing
 ```
 
 ### 2. Install Dependencies
@@ -88,7 +88,7 @@ Start the Ollama service and pull the required models:
 ollama serve
 
 # In a new terminal, pull the required models
-ollama pull qwen3.8b
+ollama pull qwen3:8b
 ollama pull qwen2.5vl:7b-q4_K_M
 ```
 
@@ -105,7 +105,7 @@ cp .env.example .env
 Default configuration:
 ```
 API_HOST=localhost
-API_PORT=8080
+API_PORT=8000
 LOG_LEVEL=INFO
 ```
 
@@ -115,14 +115,14 @@ LOG_LEVEL=INFO
 pdm run app
 ```
 
-The API will be available at `http://localhost:8080`
+The API will be available at `http://localhost:8000`
 
 **Note**: The first startup may take 1-2 minutes as PaddleOCR loads its models into memory.
 
 ## API Documentation
 
 Once the server is running, you can access:
-- **Interactive API docs**: http://localhost:8080/docs
+- **Interactive API docs**: http://localhost:8000/docs
 
 ### Endpoints
 
@@ -141,7 +141,7 @@ Submit a new insurance claim with supporting documents.
 
 **Example using curl**:
 ```bash
-curl -X POST "http://localhost:8080/claims/" \
+curl -X POST "http://localhost:8000/claims/" \
   -F "description=I had a medical emergency during my trip to Spain" \
   -F "metadata=Date: 2024-01-15, Location: Madrid" \
   -F "files=@medical_certificate.jpg" \
@@ -167,7 +167,7 @@ Retrieve details of a specific claim.
 
 **Example**:
 ```bash
-curl "http://localhost:8080/claims/550e8400-e29b-41d4-a716-446655440000"
+curl "http://localhost:8000/claims/550e8400-e29b-41d4-a716-446655440000"
 ```
 
 **Response**:
@@ -192,7 +192,7 @@ Retrieve a list of all processed claims.
 
 **Example**:
 ```bash
-curl "http://localhost:8080/claims/"
+curl "http://localhost:8000/claims/"
 ```
 
 **Response**: Array of claim objects
@@ -219,7 +219,7 @@ For a detailed analysis of the pipeline's performance and evaluation results, se
 ## Project Structure
 
 ```
-claim-processing-pipeline/
+automated-claims-processing/
 ├── src/claim_processing_pipeline/
 │   ├── api/              # API endpoints and models
 │   ├── experts/          # Specialized steps
@@ -235,7 +235,7 @@ claim-processing-pipeline/
 │   └── policy.md         # Insurance policy document
 ├── evaluation/           # Evaluation scripts
 ├── results/              # Evaluation results
-└── in-memory-storage/    # Processed claims storage
+└── in-memory-storage/    # Processed claims storage  (created when API is used)
 ```
 
 ## Troubleshooting
