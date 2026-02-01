@@ -1,0 +1,1071 @@
+[
+  {
+    "claim_id": "claim 1",
+    "claim_description": "I was unable to check in at Ganga Vatika Boutique Hotel in Rishikesh on March 25, 2024, due to a sudden medical emergency involving my daughter, who experienced a severe allergic reaction the night before our scheduled departure.\n\nWe had to seek immediate medical attention, and as a result, we had to cancel our travel plans entirely. I understand the booking was listed as non-refundable, but given the unforeseen nature of the situation, I am kindly requesting a refund or partial compensation.\n\nSincerely,\nThomas Becker",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "medical document missing",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is denied because the supporting documents do not provide sufficient evidence to verify the medical emergency. The medical report is missing, and the claimant's daughter's name is not mentioned in the supporting documents, making it impossible to confirm the incident as a covered reason under the policy.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "e9b0f685-c7ad-4369-b03c-b1f9ebafc9c4",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 1/booking confirmation 2.png",
+        "text": "Booking.com\nBooking confirmation\nCONFIRMATION NUMBER:2767.038.327\nPIN CODE: 1378\nCHECK-IN\nCHECK-OUT\nROOMS\nNIGHTS\nGanga Vatika Boutique Hotel, Rishikesh\n25\n28\n1 / 3\nAddress:C27,Ganga Vatika-2 Muni-ki-reti, Rishikesh,\nRishikesh, 249201, India\nMARCH\nMARCH\nPhone: +91 97201 67492\nThursday\nSunday\nYOUR GROUP\n2 adults, 1 child (5\nGPS coordinates: N 030\u00b0 7.349, E 78\u00b0 18.476\nfrom 13:00\nuntil 12:00\nyears old)\nPRICE\n6,210\n1 room\nGoods & services tax\n745.20\nPrice\n6,955.20\n(for 2 guests)\nThe final price shown is the amount you will pay to the property.\nBooking.com does not charge guests any reservation, administration or other fees.\nYour card issuer may charge you a foreign transaction fee.\nPayment information\n6,955.20\nThe property will charge you:\nThis property accepts the following forms of payment: American Express, Visa, Mastercard, Maestro\nAdditional information\nPlease note that additional supplements (e.g. extra bed) are not added in this total.\nIf you don't show up or cancel, applicable taxes may still be charged by the property.\nPlease remember to read the Important information below, as this may contain important details not mentioned here.\nPracheen\nGoverdhan Dham\nGangeg\nOmkarananda Institute\nbhadrakali mandir\nof Management and...\nGANGA VATIKA\n\nEref\nHerbal Park\n\neg\nafan\n1im\nSachcha Dham Ashram\n\n  \nShatrugh\nTemple\nGita Bhawan\n\n \nAoca\nRafting In Rishik\nModern Institute\nGanga Nivash\nof Technology\n1927\nSwarg Ashram\nJook Rd\ndca\nA\nmn Pe\nT 39\nBadrinath Temple\nMUNI KI RETI\nripma\nParmarth Niketan Ashram\n42\n\nP TS\nv\nGoogle\nBap data (2021\nSuper Deluxe Double Room\nGuest name: naveen kumar\nPrepayment:\nNumber of guests: 2 adults, 1 child (5 years old)\nYou will be charged a prepayment of\nMeal Plan:\nthe total price at any time.\nStart your day with breakfast for  200 per guest, per night. Contact the property for details.\nCancellation policy:\nRefuel with lunch for  300 per guest, per night. Contact the property for details.\nNon-refundable\nDine in for  250 per guest, per night. Contact the property for details.\nCancellation cost:\nuntil 24 March 2021 23:59 [IST] :  6,210\nThis is a low rate - no money back\nPrivate bathroom \u2022 Balcony \u00b7 View \u2022 Free toiletries - Shower \u2022 Air conditioning \u00b7 Toilet - Sofa \u00b7 Hardwood or parquet floors -\nreservation. If you choose to cancel\nTowels - Socket near the bed \u00b7 Tile/marble floor \u00b7 Desk \u00b7 Seating Area \u00b7 Refrigerator - Mosquito net - Ironing facilities \u00b7\nyou will not be refunded. Changing\nInterconnected room(s) available \u2022 Microwave \u2022 Fan - Electric kettle - Wardrobe or closet - Clothes rack \u2022 Toilet paper - Board\nthe dates of your stay is not possible.\ngames/puzzles - Books, DVDs, or music for children \u00b7 Single-room air conditioning for guest accommodation \u00b7 Hand sanitiser\nBed Size(s): 1 large double bed (151-180cm wide)",
+        "file_ext": ".png",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "guest_name": "naveen kumar",
+          "booking_reference": "2767.038.327",
+          "booking_platform": "Booking.com",
+          "price": "6,955.20",
+          "location": "Ganga Vatika Boutique Hotel, Rishikesh, Rishikesh, 249201, India",
+          "check_in_date": "Thursday",
+          "check_out_date": "Sunday",
+          "number_guests": "2 adults, 1 child (5 years old)",
+          "booked_on": null
+        }
+      },
+      {
+        "id": "8878e651-1eb8-435c-a5eb-a048d88cda09",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 1/supporting1.md",
+        "text": "**Current date is: 2024-04-25**\n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 137.507838,
+    "error": null
+  },
+  {
+    "claim_id": "claim 10",
+    "claim_description": "To whom it may concern,\n\nI am writing to request a refund for a flight that was missed on August 10, 2016, due to a last-minute medical check-up required for my daughter, LUC\u00cdA FERN\u00c1NDEZ, who was 12 years old at the time.\n\nOn the same day of the scheduled flight, she underwent a full medical evaluation at a government-certified medical facility in the State of Mexico. The check-up was mandated to assess her physical fitness and included detailed measurements, visual acuity tests, and other clinical evaluations.\n\nAlthough she was declared clinically healthy, the unforeseen scheduling and duration of this mandatory appointment made it impossible for us to arrive at the airport on time.\n\nI respectfully request a refund for the missed flight and attach the official medical certificate issued by Dr. Franco R. Hern\u00e1ndez Mar\u00edn as supporting documentation.\n\nThank you for your attention and understanding.\n\nSincerely,\nALEJANDRA FERN\u00c1NDEZ",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the medical certificate states the person is healthy",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The medical certificate does not confirm the reason for the missed flight. The claimant stated that the daughter underwent a mandatory medical check-up, but the supporting document lists a different patient name (MONTSERRAT BECERRIL GALV\u00c1N) than the one mentioned in the claim (LUC\u00cdA FERN\u00c1NDEZ). This discrepancy invalidates the claim as it cannot be fully verified. Additionally, the medical report does not indicate any health issue that would qualify as a covered reason under the policy. The claim is therefore denied due to incomplete documentation and lack of verifiable evidence for the covered reason.",
+    "policy_context": "\nIf you miss a scheduled departure or connection due to a covered reason, you may be compensated.\n\nExamples of covered reasons: \n- Traffic accident en route\n\nWhat's required:\n- Incident report or documentation explaining the cause of delay\n- Proof of booking\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "e9b3e643-f626-4260-b0f2-13bab5db4b9b",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 10/Spanish_medical_5.webp",
+        "text": "GOBIERNO DEL\nISEM\nHERSA\nESTADO DE M\u00c9XICO\nenGRANDE\nGRUPO M\u00c9DICO\nCERTIFICADO M\u00c9DICO\nEl que suscribe M. C. Franco R. Hern\u00e1ndez Mar\u00edn legalmente\nautorizado para ejercer la profesi\u00f3n, con C\u00e9dula Profesional\n3280737; CERTIFICO de buena fe y con datos ver\u00eddicos a:\nMONTSERRAT BECERRIL GALV\u00c1N DE 12 A\u00d1OS\nEl d\u00eda 10 de agosto de 2016\nEn el momento se encuentra CL\u00cdNICAMENTE SANA\nPESO\n23 kg.\nTALLA\n120 cm.\n\u00cdNDICE DE MASA CORPORAL (IMC)\nNORMAL\nTIPO DE SANGRE\nO POSITIVO\nAGUDEZA VISUAL: NORMAL\n\u00bfYA CORREGIDO CON LENTES? NO\nPOR\nLO\nQUE\nNO\nREQUIERE VALORACI\u00d3N\nPOR\nOFTALMOLOG\u00cdA.\nAPTO PARA REALIZAR ACTIVIDAD F\u00cdSICA: SI\nOBSERVACIONES:NINGUNA\nU. A. E. M.\nDR. FRANCO R. HERN\u00c1NDEZ MAR\u00cdN\nFIRMA",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "MONTSERRAT BECERRIL GALV\u00c1N",
+          "hospital_or_clinic": null,
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "DR. FRANCO R. HERN\u00c1NDEZ MAR\u00cdN"
+        }
+      },
+      {
+        "id": "b1ded3d8-fde8-4c15-93b8-9be74895a5da",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 10/supporting1.md",
+        "text": "**Current date is: 2016-09-01**\n\n**Name**: ALEJANDRA FERN\u00c1NDEZ  \n**Booking Ref**: FLT-19468322  \n**Price**: \u20ac226  \n**Flight**: VOLOMEX 247  \n**Operator**: Volomex Airlines  \n**Departure**: 2016-08-10 13:15 (local)  \n**From**: Mexico City International Airport (MEX)  \n**To**: Canc\u00fan International Airport (CUN)  \n**Seat**: 18C (Economy Class)  \n**Fare Type**: Basic Economy  \n**Booked on**: 2016-07-28 11:56  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 167.092312,
+    "error": null
+  },
+  {
+    "claim_id": "claim 11",
+    "claim_description": "Hi,\n\nI\u2019m submitting a claim for a missed domestic flight on 25 January 2023. I had a severe migraine attack that day and had to go to the Hospital around noon. I was advised to rest for at least 12 hours due to the side effects of the treatment.\n\nThe episode was triggered by food I\u2019m allergic to, which I had unknowingly eaten a day earlier. I\u2019ve attached the doctor\u2019s note confirming the consultation and the prescribed rest. Unfortunately, I was not able to make it to the airport in time for my flight.\n\nPlease let me know if you need anything else from my side. Thanks.\n\nCristina Carhuayo Freire",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is not covered under the policy as the reason for the missed flight (severe migraine triggered by an allergic reaction) is not listed as a covered reason. The policy only covers traffic accidents en route as a covered reason for missed flights. The medical documents confirm the incident but do not qualify as a covered reason under the policy terms.",
+    "policy_context": "\nIf you miss a scheduled departure or connection due to a covered reason, you may be compensated.\n\nExamples of covered reasons: \n- Traffic accident en route\n\nWhat's required:\n- Incident report or documentation explaining the cause of delay\n- Proof of booking\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "2bcce01c-1776-4cec-9954-c2d26cd0e7be",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 11/medical 3.webp",
+        "text": "HOSPITAL VOZANDES QUITO\n\"A la gloria de Dios y al servicio del Ecuador\nVillalengua Oe2-37 y Av. 10 de Agosto\nPbx: 3971 000 Fax: 2944 998\nQuito, DM. 25 de Enero de 2023\nCERTIFICADO MEDICO\nEl / la paciente: CRISTINA VANESSA CARHUAYO FREIRE\nCedula / Pasaporte: 1753900586\n, Historia Cl\u00ednico;\n72194601\nest\u00e1 siendo atendido / a en: MEDICINA GENERAL\nde esta casa de salud.\nDiagnostico (s): MIGRA\u00d1A SEVERA\nHora de Ingreso : 11:45\nHora de Salida : 12:52\nA petici\u00f3n del interesado, certifico haber atendido el d\u00eda 25 de Enero de 2023, a la Se\u00f1orita\nCRISTINA VANESSA CARHUAYO FREIRE, de 20 a\u00f1os de edad, con c\u00e9dula de\nciudadan\u00eda 1753900586, qui\u00e9n se present\u00f3 a consulta con un cuadro cl\u00ednico por dolor de cabeza\nen la parte superior derecha y enrojecimiento por ingerir alimentos de antecedencia al\u00e9rgica y\npicor de los ojos.\nManteniendo reposo por 12 Horas por efectos secundarios de la Medicina Adquirida.\nPuede hacerse uso del presente certificado de la mejor manera.\nAtentamente:\nDr. Fernando Roca\nMEDICO GENERAL\nDirecci\u00f3n: Av. San Francisco N39/19 y Av. Am\u00e9rica /Tel\u00e9fonos.: (593) 02 2276 404 / 02 2253 8602 / 02 2279 838 Ext. 160 / Correo:\ng-clinic@hcjb.org.0c / Horario: Lunes a viernes de 7:30-18:30 S\u00e1bados de 7:30-13:00 / Director: Dr.Patricio Flores",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "CRISTINA VANESSA CARHUAYO FREIRE",
+          "hospital_or_clinic": "HOSPITAL VOZANDES QUITO",
+          "admission_date": "25 de Enero de 2023",
+          "discharge_date": "25 de Enero de 2023",
+          "report_issuing_date": "25 de Enero de 2023",
+          "diagnosis": "MIGRA\u00d1A SEVERA",
+          "treatment": "Manteniendo reposo por 12 Horas por efectos secundarios de la Medicina Adquirida",
+          "doctor_name": "Dr. Fernando Roca"
+        }
+      },
+      {
+        "id": "d7fff8ec-8c19-4e4b-92d0-c8fa775cf86b",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 11/supporting1.md",
+        "text": "**Current date is: 2023-01-26**\n\n**Name**: Cristina Vanessa Carhuayo Freire  \n**Booking Ref**: LAE-7318824  \n**Price**: \u20ac88  \n**Flight**: LA1353  \n**Operator**: LATAM Ecuador  \n**Departure**: 2023-01-25 15:10 (local)  \n**From**: Mariscal Sucre International Airport (UIO)  \n**To**: Jos\u00e9 Joaqu\u00edn de Olmedo International Airport (GYE)  \n**Seat**: 8D (Economy Class)  \n**Fare Type**: Promo Plus  \n**Booked on**: 2022-11-04 10:21\n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 91.700532,
+    "error": null
+  },
+  {
+    "claim_id": "claim 12",
+    "claim_description": "Bonjour,\n\nJe vous \u00e9cris concernant mon vol manqu\u00e9. J\u2019\u00e9tais cens\u00e9e voyager le 2 d\u00e9cembre 2022 au matin, mais \u00e0 la suite d\u2019une hospitalisation en urgence \u00e0 l\u2019H\u00f4pital Principal de Dakar apr\u00e8s un traumatisme abdominal, je n\u2019ai pas pu me rendre \u00e0 l\u2019a\u00e9roport.\n\nVous trouverez ci-joint un certificat d\u2019hospitalisation attestant de ma situation.\n\nJe sollicite donc le remboursement ou l\u2019\u00e9mission d\u2019un avoir pour ce billet.\n\nMerci de votre compr\u00e9hension et de votre aide.\n\nCordialement,\nAmy Ndiaye",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required documents and the incident is a covered reason under the policy. The hospitalization due to a traumatic injury is a valid covered reason, and the documents confirm the delay and the booking details. There are no exclusions or late reporting issues.",
+    "policy_context": "\nIf you miss a scheduled departure or connection due to a covered reason, you may be compensated.\n\nExamples of covered reasons: \n- Traffic accident en route\n\nWhat's required:\n- Incident report or documentation explaining the cause of delay\n- Proof of booking\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "ff65f97e-5d5f-4871-a636-62000ffb3fbf",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 12/internal flight data.md",
+        "text": "**Current date is: 2022-12-18**\n\nFlight booking information:  \nName: Amy Ndiaye  \nBooking Ref: TCK-44562283  \nPrice: $89 (paid)  \nFlight: SD1283  \nAirline: SenAir  \nDeparture: 2022-12-02 09:15 (local)  \nFrom: DKR (Dakar L\u00e9opold S\u00e9dar Senghor International Airport)  \nTo: ZIG (Ziguinchor Airport)  \nSeat: 14C (Economy)  \nFare Type: Flex Eco  \nBooked on: 2022-11-25 10:47  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      },
+      {
+        "id": "2feb349e-9c15-4026-8721-ca69041632be",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 12/French_medical_3.webp",
+        "text": "HOPITAL PRINCIPAL DE DAKAR\nService de la Maternit\u00e9\nDakar, le 02/12/2022\nCERTIFICAT D'HOSPITALISATION\nJe soussign\u00e9 Dr Ndama NIANG certifie que Mme Amy NDIAYE, n\u00e9e le 21/12/1981\nest hospitalis\u00e9e depuis le 01/12/2022 \u00e0 la maternit\u00e9 de l'H\u00f4pital Principal de Dakar suite \u00e0 un\ntraumatisme abdominal par rixe.\nA l'admission : l'examen obst\u00e9trical \u00e9tait sans particularit\u00e9s.\nL'\u00e9chographie objectivait un sac gestationnel contenant un embryon de 9SA1) avec une activit\u00e9\ncardiaque ; et un d\u00e9collement trophoblastique du p\u00f4le sup\u00e9rieur mesur\u00e9 \u00e0 11mm et un\nd\u00e9collement \u00e9tendu du p\u00f4le inf\u00e9rieur de l'\u0153uf dont le diam\u00e8tre ant\u00e9ro-post\u00e9rieur est mesur\u00e9 \u00e0\n6mm permettant de conclure \u00e0 une menace d'avortement pr\u00e9coce post traumatique.\nEn foi de quoi, ce certificat lui est d\u00e9livr\u00e9 pour servir et valoir ce que de droit.\nDr Ndama NIANG\nM\u00e9decin - Lieutenant\nAncienne interne des h\u00f3pitaux\nGynecologue - Obstetricienne\nPrincipal de Dakat",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "Mme Amy NDIAYE",
+          "hospital_or_clinic": "HOPITAL PRINCIPAL DE DAKAR",
+          "admission_date": "01/12/2022",
+          "discharge_date": null,
+          "report_issuing_date": "02/12/2022",
+          "diagnosis": "menace d'avortement pr\u00e9coce post traumatique",
+          "treatment": null,
+          "doctor_name": "Dr Ndama NIANG"
+        }
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 75.655827,
+    "error": null
+  },
+  {
+    "claim_id": "claim 13",
+    "claim_description": "Bonjour,\n\nSuite \u00e0 une hospitalisation le 16 d\u00e9cembre 2023 pour un examen m\u00e9dical urgent \u00e0 l\u2019h\u00f4pital Saint-Louis \u00e0 Paris, je n\u2019ai pas pu me pr\u00e9senter \u00e0 mon vol initialement pr\u00e9vu ce jour-l\u00e0.\n\nVous trouverez ci-joint mon certificat d\u2019hospitalisation attestant de ma prise en charge.\n\nJe sollicite donc un remboursement ou, \u00e0 d\u00e9faut, l\u2019\u00e9mission d\u2019un avoir.\n\nJe reste disponible pour toute information compl\u00e9mentaire.\n\nCordialement,\nKouadri Elhadi Mehdi",
+    "expected_decision": "UNCERTAIN",
+    "acceptable_decision": "DENY",
+    "ground_truth_explanation": "suspicious dating on the document (17/11/2023 stamp)",
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required elements present, no inconsistencies, and no exclusions apply. The medical report confirms the hospitalization on the date of the flight, and the booking details support the claim for cancellation due to a medical emergency. The current date is within the policy period and the claim was not submitted late.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "e70bd802-bd8c-48a7-9a10-439589f73b27",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 13/French_medical_4.webp",
+        "text": "H\u00f4pital\nSaint-Louis\nAP-HP\nCERTIFICAT D'HOSPITALISATION\nJe soussign\u00e9, Docteur Kurtneh Mohamed, Praticien Hospitalier dans le service\nde M\u00e9decine Physique et R\u00e9adaptation \u00e0 l\u2019h\u00f4pital Saint-Louis -1 Av. Claude\nVellefaux - 75010 Paris, atteste que Monsieur KOUADRI ELHADI MEHDI, n\u00e9\nle 05.08.1999, a \u00e9t\u00e9 pris en charge en h\u00f4pital, \u00e0 raison d\u2019examen m\u00e9dical\npour une dur\u00e9e de un jours , le 16/12/2023 au 17/12/2023\nFait \u00e0 PARIS le 17/11/2023\nSigrOdntmdoscllader G\u00e1ndrel de Sslot-emsi\nRDV : 01 42 36 69.00\n\nalaal cesaneva\nk\u00e9eductic\nbon-dERetraite/\n- 9320s Salnt-Denis Cedex\n0142356289\nCe certifiicat lui est d\u00e9livr\u00e9 pour servir et valoir ce que de droit.",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "KOUADRI ELHADI MEHDI",
+          "hospital_or_clinic": "H\u00f4pital Saint-Louis",
+          "admission_date": "16/12/2023",
+          "discharge_date": "17/12/2023",
+          "report_issuing_date": "17/11/2023",
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "Docteur Kurtneh Mohamed"
+        }
+      },
+      {
+        "id": "50959a05-5fbb-43fb-9032-4b65209944ca",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 13/internal flight data.md",
+        "text": "**Current date is: 2024-01-22**\n\nFlight booking information:  \n**Name**: Kouadri Elhadi Mehdi  \n**Booking Ref**: TCK-55892377  \n**Price**: \u20ac142 (paid)  \n**Flight**: AF1342  \n**Airline**: Air France  \n**Departure**: 2023-12-16 17:40 (local)  \n**From**: CDG (Paris Charles de Gaulle Airport)  \n**To**: BCN (Barcelona\u2013El Prat Airport)  \n**Seat**: 22D (Economy)  \n**Fare Type**: Semi-Flexible  \n**Booked on**: 2023-11-15 09:12  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 80.916895,
+    "error": null
+  },
+  {
+    "claim_id": "claim 14",
+    "claim_description": "Bonjour,\n\nJe souhaite soumettre une demande de remboursement concernant un stage sportif auquel ma fille, Lily Fang, devait participer en septembre 2018. Malheureusement, en raison d\u2019un probl\u00e8me m\u00e9dical soudain, elle n'a pas pu prendre part aux activit\u00e9s.\n\nNous avions pay\u00e9 l'int\u00e9gralit\u00e9 du montant de 450 \u20ac \u00e0 l'avance pour un stage incluant des cours de cano\u00eb-kayak. Cependant, le 5 septembre 2018, le Dr Sylvie a d\u00e9livr\u00e9 un certificat m\u00e9dical indiquant que Lily FANG ne pouvait pas pratiquer d'activit\u00e9s physiques, y compris le cano\u00eb en comp\u00e9tition, pour des raisons de sant\u00e9 (\"cause \u00e0 pied\").\n\nEn cons\u00e9quence, Lily Fang a manqu\u00e9 l'int\u00e9gralit\u00e9 du stage et n\u2019a re\u00e7u aucun remboursement de l'organisateur malgr\u00e9 nos d\u00e9marches.\n\nJe joins \u00e0 cette r\u00e9clamation le certificat m\u00e9dical du Dr Sylvie comme preuve de son incapacit\u00e9 \u00e0 participer.\n\nJe sollicite donc le remboursement pr\u00e9vu dans ma police d'assurance au titre des \"activit\u00e9s manqu\u00e9es pour cause de maladie\".\n\nMerci de prendre en compte ma demande.\n\nCordialement,\nCamille Martin",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "medical document states the patient is healthy",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The medical certificate does not provide sufficient detail to confirm the reason for the cancellation, including the diagnosis, treatment, or specific medical condition preventing Lily Fang from participating in the sports camp. The policy requires a medical report that supports a medical emergency, which this document does not fulfill. Additionally, the claim is for a trip that occurred in September 2018, and the current date is 2018-10-20, which is within the 30-day reporting window. However, the lack of detailed medical information results in the claim being denied due to incomplete documentation.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "cb619584-9c95-40ec-929e-4ebcae8ed1b8",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 14/French_medical_1.webp",
+        "text": "A dYU\nDocteur Sylvie LOSSEROY\n01\n- M\u00e9decine G\u00e9n\u00e9rale\nConventionn\u00e9\nLe 5/9/18\n11, rue Montigny\n21000 DIJON\n211026687 10-1-24-1\nCertificat m\u00e9dical\nLossony\nJe soussign\u00e9(e), Docteur\nFANG lily\nCertifie que : Mr, Mme, l'enfant\nDoit \u00eatre dispens\u00e9 d'\u00e9ducation physique et sportive\nPendant\njours, \u00e0 compter du\nNe pr\u00e9sente actuellement aucune contre-indication apparente\nCourse d\nKed\n\u00e0 la pratique du sport suivant\ny compris en comp\u00e9tition.\nNe pr\u00e9sente actuellement aucun signe cliniquemnent d\u00e9celable d'affection contagieuse.\nEst apte \u00e0 la vie en collectivit\u00e9.\nNe pourra fr\u00e9quenter l'\u00e9cole pendant\njours\n\u00e0 compter du\net ce jusqu'au\nEst malade. La pr\u00e9sence de sa m\u00e8re/son p\u00e8re\nest indispensable aupr\u00e8s de lui pendant\njours,\n\u00e0 compter du\net ce jusqu'au",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "Mr, Mme, l'enfant",
+          "hospital_or_clinic": null,
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "Docteur Sylvie LOSSEROY"
+        }
+      },
+      {
+        "id": "48c66fdd-0f57-4667-adf7-6297af9e5fbb",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 14/internal ticket data.md",
+        "text": "**Current date is: 2018-10-20**\n\nSports camp ticket booking confirmation:  \nName: Lily Fang  \nBooking Ref: TCK-44562283  \nPrice: \u20ac450 (paid)  \nDate: 2018-09-07\n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 300.40901,
+    "error": null
+  },
+  {
+    "claim_id": "claim 15",
+    "claim_description": "Sehr geehrte Damen und Herren,\n\nam 27. Juni 2007 musste ich mich einer dringenden pathologisch-anatomischen Untersuchung in Frankfurt am Main unterziehen. Aufgrund dieses medizinischen Eingriffs konnte ich meine geplante Zugreise an diesem Tag nicht antreten.\n\nAnbei finden Sie den entsprechenden \u00e4rztlichen Bericht als Nachweis.\n\nIch bitte h\u00f6flich um R\u00fcckerstattung.\n\nMit freundlichen Gr\u00fc\u00dfen,\nRoy Hoffman",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the name is obscured in the medical document and visible initials do not correspond",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is denied because the medical report does not confirm a medical emergency. The diagnosis provided is for a serious condition, but the report does not state that the patient was unfit to travel or that the procedure was an emergency requiring immediate attention. A medical report stating the person is healthy/apt does not constitute a covered reason and the claim MUST be automatically denied.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "3943f395-412c-4b29-9d56-747bdfd33321",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 15/German_1.jpg",
+        "text": "Gemeinschaftspraxis\nPriv. Doz. Dr. S. Falk\nPathologie\nDr. H. Neudert\nDr. C. Heinrichs\nFrankfurt am Main\nProf. Dr. H. P. Lange\nPriv. Doz. Dr. H. Motherby\nProf. Dr. C. Ihling\nDr. K. Technau-Ihling\nGemeinschaftspraxis f\u00fcr Pathologie, 60487 Frankfurt\nAledterungs\nDeutarher\nHerrn\nRat\nGinnheimer Landstr. 86\n60487 Frankfurt am Main\nPD Dr. med. R.A. B\u00fcrger\nPostfach 200254\nChefarzt der Urolog. Abteilung\nDAP-1-03.253-00-98-00\n60606 Frankfurt am Main\nAkkredtiert nacks\nDIN EN 45001\nTelefon: 069/951447-0\nSt. Katharinen-Krankenhaus\nTelefax: 069/951447-50\nSeckbacher Landstr. 65\ne-mail: info@pathologie-frankfurt.de\nInternet: www.pathologie-frankfurt.de\n60389 Frankfurt am Main\nStation: 2b\nPatient : R\n', G\n*19.12.1945\np\nEing.-Datum: 27.06.2007\nAusg.-Datum: 28.06.2007 CH/nr\nE-Nr. : H 45458-07\nBericht \u00fcber die Pathologisch-anatomische Begutachtung\nMaterial/klinische Angaben\nPE aus BlasenCA, aus BlasenCA tiefe PE, tiefste PE aus BlasenCA /cs/sw\nMakroskopischer Befund\n1. 0,8g Resektionssp\u00e4ne von der Harnblase. Einbettung in toto.\n2. 0,4g Resektionssp\u00e4ne von der Harnblase. Einbettung in toto.\n3. 0,1g Resektionssp\u00e4ne von der Harnblase. Einbettung in toto.\nMikroskopischer Befund\n1. Hier ein polypoides, papill\u00e4res, atypisches Urothel mit mittelgro\u00dfen und gro\u00dfen Tumor-\nepithelien , die gro\u00dfvesicul\u00e4re Kerne und Anisonucleose zeigen. Der Tumor infiltriert\nStromaanteile.\n2. Hier isomorphe Tumorinfiltrate mit Beteiligung von Lymphspalten und Muskelwand-\nanteilen.\n3. Auch hier isomorphe Tumoranteile.\nPathologisch-Anatomische Diagnose\n1. bis 3. Gering differenziertes, solides und papill\u00e4res, invasives Urothelcarcinom der\nHarnblase mit Infiltration der Muskelwand in der tiefen und tiefsten PE (2., bzw. 3.) mit\nLymphangiosis carcinomatosa - pT2a mindestens / G3\nDie gesetzlich vorgeschriebene Meldung an das Krebsregister Hessen wurde von uns\nvorgenommen.\nDer Befund wurde bereits per Telefax \u00fcbermittelt.\nProf. Dr. med. H. P. Lange\nDr. med. C. Heinrichs\n*-H0704545800*",
+        "file_ext": ".jpg",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "R",
+          "hospital_or_clinic": "St. Katharinen-Krankenhaus",
+          "admission_date": "27.06.2007",
+          "discharge_date": "28.06.2007",
+          "report_issuing_date": "28.06.2007",
+          "diagnosis": "1. bis 3. Gering differenziertes, solides und papill\u00e4res, invasives Urothelcarcinom der Harnblase mit Infiltration der Muskelwand in der tiefen und tiefsten PE (2., bzw. 3.) mit Lymphangiosis carcinomatosa - pT2a mindestens / G3",
+          "treatment": null,
+          "doctor_name": "Prof. Dr. med. H. P. Lange, Dr. med. C. Heinrichs"
+        }
+      },
+      {
+        "id": "812e7f42-54ce-45c9-86f6-483de662e36a",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 15/internal train data.md",
+        "text": "**Current date is: 2007-08-08**\n\n**Name**: Roy Hoffman  \n**Booking Ref**: TRN-98412577  \n**Price**: \u20ac86  \n**Train**: ICE 723  \n**Operator**: Deutsche Bahn (DB)  \n**Departure**: 2007-06-27 14:50 (local)  \n**From**: Frankfurt(Main) Hbf  \n**To**: M\u00fcnchen Hbf  \n**Seat**: Car 22, Seat 61 (2nd Class, Window)  \n**Fare Type**: Sparpreis  \n**Booked on**: 2007-06-10 13:45  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 77.404722,
+    "error": null
+  },
+  {
+    "claim_id": "claim 16",
+    "claim_description": "A causa di un ricovero ospedaliero urgente il 14 aprile 2017 presso l'Ospedale Renzetti di Lanciano, non sono riuscita a utilizzare il biglietto ferroviario acquistato per quello stesso giorno.\n\nAllego alla presente il certificato di ricovero a supporto della mia richiesta.\n\nChiedo gentilmente il rimborso.",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is supported by a medical certificate indicating an urgent hospitalization on 14 April 2017, which aligns with the cancellation of the train ticket. The documents confirm the incident occurred within the policy period and the claim was submitted within 30 days of the incident. All required elements are present and there are no exclusions or inconsistencies.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "aa857a6c-681d-4a44-9d3a-150b1cc9eea4",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 16/Italian_medical_1.jpg",
+        "text": "tone Abruzzo\nAzienda Sanitaria Locale N. 2 Lanciano\nP.O. \"Renzetti\"\nCERTIFICATO DI RICOVERO\nSi Attesta che PICCIRILLI FRANCESCA nata il 30-07-1980 a GERMANIA (EE) e residente a\nCte aa    a \ndimesso il14-04-2017\nSi rilascia il presente certificato, su richiesta dell'interessato, per gli usi consentiti dalla legge.\nNOTE:\nLanciano l\u00ec,18-04-2017\nIL MEDICO DEL R\u00c9PARTO\n(timbro e frma)",
+        "file_ext": ".jpg",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "PICCIRILLI FRANCESCA",
+          "hospital_or_clinic": "Azienda Sanitaria Locale N. 2 Lanciano, P.O. \"Renzetti\"",
+          "admission_date": null,
+          "discharge_date": "14-04-2017",
+          "report_issuing_date": "18-04-2017",
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "069e7942-b2bc-4912-8640-bef1fda69747",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 16/internal train data.md",
+        "text": "**Current date is: 2017-05-11**\n\n**Name**: Piccirilly Francesca  \n**Booking Ref**: TRN-55218829  \n**Price**: \u20ac38  \n**Train**: Frecciarossa 9522  \n**Operator**: Trenitalia  \n**Departure**: 2017-04-14 17:10 (local)  \n**From**: Pescara Centrale  \n**To**: Milano Centrale  \n**Seat**: Car 5, Seat 12A (Standard Class)  \n**Fare Type**: Economy  \n**Booked on**: 2017-03-24 16:48  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 117.621219,
+    "error": null
+  },
+  {
+    "claim_id": "claim 17",
+    "claim_description": "Por motivos m\u00e9dicos, no pude asistir a la competencia deportiva para la cual me hab\u00eda registrado.\n\nAdjunto constancia m\u00e9dica emitida por el Hospital Universitario Ruiz y P\u00e1ez, donde se certifica mi estado de salud posterior a un chequeo general.\n\nSolicito amablemente el reembolso o un cr\u00e9dito para futuros eventos.",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "documentation states the claimant is in good condition, lacks a signature",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is denied because the medical report does not constitute a covered reason. The report states the patient is in good health and fit for physical activity, which does not qualify as a medical emergency under the policy. Additionally, the fraud detection report indicates the document is missing a signature/official seal, which is a document validity concern, but the claim is automatically denied due to the medical report not being a covered reason.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "6d2d8a18-f382-443f-907d-f17792cebc39",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 17/internal ticket data.md",
+        "text": "**Current date is: 2024-3-22**\n\n**Name**: Luis Angel Duque  \n**Booking Ref**: EVT-77201844  \n**Price**: $29 (paid)  \n**Event**: Carrera 10K Ciudad Bol\u00edvar  \n**Venue**: Plaza Bol\u00edvar, Ciudad Bol\u00edvar  \n**Event Date**: 2024-03-03 07:30 (local)  \n**Bib Number**: 1418  \n**Ticket Type**: General Participant  \n**Registered on**: 2024-02-01 16:55  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      },
+      {
+        "id": "44394ef5-3843-474b-80f7-b37694b18d74",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 17/Spanish_medical_16.webp",
+        "text": "Hospital Universitario Ruiz y P\u00e1ez\nFecha:\nMedicina Interna\nCiudad Bol\u00edvar - Edo. Bol\u00edvar\nCONSTANCIA M\u00c9DICA\nA quien pueda interesar\nPor medio de la presente hago constar que el ciudadano Luis Angel Duque\nde 17 a\u00f1os de edad, portador de la cedula de identidad y- 25.781.084;\ndespu\u00e9s de haberle realizado el examen m\u00e9dico general; se encuentra en\nbuenas condiciones cl\u00ednicas, apto para actividad f\u00edsica de cualquier tipo.\nConstancia que se expide a petici\u00f3n de la persona interesada\nDatos del M\u00e9dico Tratante:",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "The document is missing a signature/official seal",
+        "extracted_fields": {
+          "patient_name": "Luis Angel Duque",
+          "hospital_or_clinic": "Hospital Universitario Ruiz y P\u00e1ez",
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": "Fecha",
+          "diagnosis": "buenas condiciones cl\u00ednicas, apto para actividad f\u00edsica de cualquier tipo",
+          "treatment": null,
+          "doctor_name": null
+        }
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 175.654186,
+    "error": null
+  },
+  {
+    "claim_id": "claim 18",
+    "claim_description": "To whom it may concern,\n\nI am submitting this claim regarding a flight I was unable to board on December 14, 2024, due to an unforeseen medical emergency. I experienced acute abdominal pain the night before the flight and was admitted to [HOSPITAL_NAME] in [CITY].\n\nI have attached the official hospital admission and discharge documentation. I was advised not to travel for at least 48 hours following the treatment.\n\nThe flight in question was booked through my employer\u2019s travel portal.\n\nI kindly request reimbursement or rescheduling of this ticket in accordance with my insurance policy\u2019s coverage for medical emergencies.\n\nSincerely,\nDaniel Romero",
+    "expected_decision": "DENY",
+    "acceptable_decision": "UNCERTAIN",
+    "ground_truth_explanation": "a picture is attached instead of the medical certificate",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The hospital admission document is missing a signature/official seal, which is a required element for verification. Additionally, the claim is not fully verifiable due to missing patient name and diagnosis details in the hospital document. The claim is also not covered under the policy as the medical emergency is not supported by sufficient documentation.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "d867c762-a8f2-4e35-bf1a-47289fb74948",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 18/hospital admission document.png",
+        "text": "HOSPITAL",
+        "file_ext": ".png",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "The document is missing a signature/official seal",
+        "extracted_fields": {
+          "patient_name": null,
+          "hospital_or_clinic": "HOSPITAL",
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "aeca5e78-f897-4ccd-b5db-fb7a5c5ab9b4",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 18/internal flight data.md",
+        "text": "**Current date is: 2025-01-10**\n\nName: Daniel Romero  \nBooking Ref: TCK-89473319  \nFlight: SH4721  \nAirline: SkyHopper  \nDeparture: 2024-12-14 08:20 (local)  \nFrom: LAX (Los Angeles International Airport)  \nTo: ORD (Chicago O'Hare International Airport)  \nSeat: 18A (Economy)  \nFare Type: Corporate Flex  \nBooked on: 2024-11-28 14:02  \nCancellation: No-show recorded  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 96.921611,
+    "error": null
+  },
+  {
+    "claim_id": "claim 19",
+    "claim_description": "Dear Customer Support,\n\nI am writing to request a refund for a train I was unable to board on September 20, 2013, due to an acute medical condition.\n\nOn the same day, I was diagnosed with gastroenteritis by Dr. L\u00edder Pinargote C. in Buenos Aires. The doctor prescribed hydration, general medication, and 72 hours of rest. Due to this sudden illness and the recommended recovery period, I was unable to travel as planned and missed my scheduled train.\n\nI have attached the official medical certificate issued by the attending physician to support my request. Given the unforeseen medical emergency, I kindly ask you to consider a refund for the unused ticket.\n\nThank you for your time and assistance.\n\nBest regards,\nMarcos Junes",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required elements present, no inconsistencies, and no exclusions apply. The medical certificate supports the claim, and the booking details confirm the trip was cancelled due to a covered reason (medical emergency). The claim was submitted within the policy period and not late reported. The fraud detection report indicates no issues with the documents provided.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "814ddb8d-7368-46e5-a46f-d1c7a6f215c9",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 19/Spanish_medical_6.jpeg",
+        "text": "Dr. L\u00e1der Pinargote C.\nM\u00e9dico\nM.N. 139.976\nCUIT 20-94437042-1\nCertifico haber examinado a:\nMarcos Funes de 34arver\nDNI 27.414.934\nQuien autoriza informar que el\ndiagn\u00f3stico presuntivo de su cuadro cl\u00ednico actual es:\nGanhoenteincolits\nSugerencias:dinlay genuales hidrotacion\ny repo 72has\nEl presente documento podr\u00e1 ser utilizado por el interesado para el fin que\nbien considere, sin constituir el mismo una referencia absoluta de su\nhistorial cl\u00ednico.\ndias del mes de Su de 2013\nBuenos Aires a los\nMee taugl\nLDER PINARGOTE C.\nNedico\nM.N.139.976 IM.P. 231.073\nFirma del profesional\nSello Aclaratorio y N\u00b0 de mat.\nJos\u00e9. A. Cabrera 3835 5to b C.A.B.A tel (011)15 38966389\nliderpinargote@hotmail.com",
+        "file_ext": ".jpeg",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "Marcos Junes",
+          "hospital_or_clinic": null,
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "Dr. L\u00e1der Pinargote C."
+        }
+      },
+      {
+        "id": "f360fe5d-8a72-4148-a0d8-01dc91da37fa",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 19/supporting1.md",
+        "text": "**Current date is: 2013-09-28**\n\n**Name**: Marcos Junes  \n**Booking Ref**: TRN-22450119  \n**Price**: \u20ac45 (paid)  \n**Train**: Ferrobaires 713  \n**Operator**: Ferrobaires  \n**Departure**: 2013-09-20 16:50 (local)  \n**From**: Buenos Aires Constituci\u00f3n  \n**To**: Mar del Plata  \n**Seat**: Car 3, Seat 8F (Pullman Class)  \n**Fare Type**: Standard  \n**Booked on**: 2013-09-14 12:07  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 58.420849,
+    "error": null
+  },
+  {
+    "claim_id": "claim 2",
+    "claim_description": "I am writing to request reimbursement for a prepaid medical appointment that I was unable to attend due to international travel on March 5, 2024.\n\nI had a confirmed appointment scheduled in Johannesburg that morning, but my flight from Windhoek with South African Airways (SA 1732) did not land in time for me to reach the clinic. As a result, I missed the appointment entirely and was still charged $113 in advance as per the clinic's cancellation policy.\n\nAttached is a copy of my boarding pass confirming my travel on the morning of March 5. I kindly ask for compensation for the lost appointment.\n\nThank you for your consideration,\nDerek Kotze",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "medical document missing, the missed the medical appointment is not covered",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim involves a prepaid medical appointment that was missed due to travel, which does not fall under the defined categories A, B, or C. It is an additional cost not covered by the standard claim types.",
+    "policy_context": null,
+    "processed_documents": [],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 18.451226,
+    "error": null
+  },
+  {
+    "claim_id": "claim 20",
+    "claim_description": "Estimados,\n\nMe dirijo a ustedes para solicitar el reembolso de un vuelo que no pude tomar el d\u00eda **22 de abril de 2020** debido a una situaci\u00f3n m\u00e9dica de emergencia.\n\nEse mismo d\u00eda fui hospitalizada en la cama 303B del Servicio de Medicina Interna del Hospital Universitario Barrios Unidos, en Bogot\u00e1, seg\u00fan consta en la certificaci\u00f3n emitida por la Coordinadora de Admisiones de Mederi. La admisi\u00f3n m\u00e9dica fue repentina e impostergable, lo que me impidi\u00f3 realizar el viaje programado.\n\nAdjunto la certificaci\u00f3n de hospitalizaci\u00f3n correspondiente como respaldo de esta solicitud. Agradezco su comprensi\u00f3n y quedo atenta a cualquier documentaci\u00f3n adicional que deba presentar para que el reembolso sea procesado.",
+    "expected_decision": "UNCERTAIN",
+    "acceptable_decision": "DENY",
+    "ground_truth_explanation": "no signature on the medical certificate",
+    "pipeline_decision": "UNCERTAIN",
+    "pipeline_explanation": "The claim is partially verifiable, but the supporting medical document is missing a signature/official seal, which raises suspicion according to the fraud detection report. This makes the claim uncertain despite the presence of other required elements.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "bc82485f-d11c-4abc-9a5d-569d5d48cdf9",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 20/Spanish_medical_7.webp",
+        "text": "m\u00e9deri\nBogot\u00e1, Abril 22 del 2020\nCERTIFICACION DE HOSPITALIZACION\nLa suscrita coordinadora de Admisiones Mederi, se permite certificar que el (la)\npaciente YENNY MARLEN MENDOZA CEPEDA identificada con CC\n33376179 se encuentra hospitalizada en la cama 303B en el Servicio de Medicina\nInterna del Hospital Universitario Barrios Unidos desde el 22 de Abril del 2020.\nAtentamente,\nOLGA ROCIO BELLO GARZON\nCOORDINADOR DE ADMISIONES MEDERI\nCORPORACION HOSPITALARIA JUAN CIUDAD\nHOSPITAL UNIVERSITARIO MAYOR\nCalle 24 # 29-61 Cormxitador: 5600520 Ed. 4024",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "The document is missing a signature/official seal",
+        "extracted_fields": {
+          "patient_name": "YENNY MARLEN MENDOZA CEPEDA",
+          "hospital_or_clinic": "HOSPITAL UNIVERSITARIO MAYOR",
+          "admission_date": "22 de Abril del 2020",
+          "discharge_date": null,
+          "report_issuing_date": "22 de Abril del 2020",
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "a5ce6dcb-dbf4-41e2-846b-2190a4952a35",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 20/supporting1.md",
+        "text": "**Current date is: 2020-05-10**\n\n**Name**: YENNY MARLEN MENDOZA CEPEDA  \n**Booking Reference**: FLT-30428891  \n**Price**: \u20ac189  \n**Flight**: AVIANCA 8541  \n**Operator**: Avianca  \n**Departure**: 2020-04-22 12:05 (local time)  \n**From**: Bogot\u00e1 El Dorado (BOG)  \n**To**: Medell\u00edn Jos\u00e9 Mar\u00eda C\u00f3rdova (MDE)  \n**Seat**: 14D (Economy Class)  \n**Fare Type**: Promo  \n**Booked on**: 2020-03-30 09:47\n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 79.684895,
+    "error": null
+  },
+  {
+    "claim_id": "claim 21",
+    "claim_description": "To whom it may concern,\n\nI am writing to request a refund for a flight I was unable to take on **February 27, 2020**, due to a serious accident that required urgent medical attention.\n\nOn that day, I was treated at the Emiro Quintero Ca\u00f1izares Hospital in Oca\u00f1a after sustaining multiple injuries, including facial trauma, nasal fractures, and an oblique fracture in the upper arm. The attending physician recommended immediate rest and recovery.\n\nI was given a signed and sealed document issued by Dr. Jorge Andrez Arias Castro, which confirms the diagnosis and circumstances of my hospitalization. I can provide this document upon request.\n\nDue to this unexpected and incapacitating medical emergency, I was unable to attend my scheduled flight. I kindly ask that you take this situation into consideration and approve a refund for the unused ticket.\n\nThank you very much for your understanding.",
+    "expected_decision": "DENY",
+    "acceptable_decision": "UNCERTAIN",
+    "ground_truth_explanation": "no supporting documentation provided",
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required elements present, and there are no inconsistencies or exclusions. The medical emergency is supported by the hospitalization details and the claim was submitted within the policy period and not late reported.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "879276f4-a207-4f16-bec2-0c18b3f4c587",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 21/supporting1.md",
+        "text": "**Current date is: 2020-03-15**\n\n**Name**: Camila Navarro Lopez  \n**Booking Ref**: FLT-14299761  \n**Price**: \u20ac164  \n**Flight**: LATAM 4232  \n**Operator**: LATAM Airlines  \n**Departure**: 2020-02-27 09:40 (local)  \n**From**: C\u00facuta Camilo Daza International Airport (CUC)  \n**To**: Bogot\u00e1 El Dorado (BOG)  \n**Seat**: 16A (Economy Class)  \n**Fare Type**: Light  \n**Booked on**: 2020-02-05 17:24  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 40.544844,
+    "error": null
+  },
+  {
+    "claim_id": "claim 22",
+    "claim_description": "Estimados,\n\nMe comunico con ustedes para solicitar el reembolso de un boleto de tren que no pude utilizar el d\u00eda **19 de octubre de 2015**.\n\nEse mismo d\u00eda acud\u00ed a una revisi\u00f3n m\u00e9dica en el centro de salud UMAPS Santo Tom\u00e1s Huatzindeo, en Salvatierra, Guanajuato. Como consta en el certificado m\u00e9dico que adjunto a esta solicitud, fui evaluado por personal autorizado y se me emiti\u00f3 constancia de hallarme en perfecto estado de salud.\n\nDado que el proceso tom\u00f3 m\u00e1s tiempo de lo previsto y era necesario completar ciertos requisitos legales personales, me fue imposible llegar a tiempo a la estaci\u00f3n y abordar el tren. Por lo tanto, solicito atentamente el reembolso del boleto no utilizado.\n\nAgradezco de antemano su comprensi\u00f3n y quedo a su disposici\u00f3n para cualquier informaci\u00f3n adicional.\n\nAtentamente,\nJos\u00e9",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the medical certificate states the person is healthy",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is not covered under the policy as the reason for the delay (medical examination) is not a covered reason according to the policy. The policy only covers traffic accidents en route, not medical reasons or delays due to personal legal requirements.",
+    "policy_context": "\nIf you miss a scheduled departure or connection due to a covered reason, you may be compensated.\n\nExamples of covered reasons: \n- Traffic accident en route\n\nWhat's required:\n- Incident report or documentation explaining the cause of delay\n- Proof of booking\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "2ef3cd58-1986-49ef-bc43-0f7b1bf768eb",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 22/Spanish_medical_10.jpeg",
+        "text": "SALUD\ngto\nSECRETAR\u00cdA DE SALUD\norgullo y\nempromiso\ntodos\nSecretaria\nSalud\nCERTIFICADO MEDICO\nAQUIEN CORRESPONDA:\nPor medio de la presente hago constar que el C. Jos\u00e9 Juan Robledo\nRomero se encuentra en Prefecto estado de Salud siendo su diagn\u00f3stico\nSANO.\nSe extiende la presente a petici\u00f3n del interesado y para los fines legales\nque juzgue convenientes, en la ciudad de Salvatierra, Guanajuato; a los\n19 d\u00edas del mes de Octubre del 2015.\nATENTAMENTE:\nM.P.S.S. Cervantes Flores Cristina\nResponsable del UMAPs Santo Tomas Huatzindeo.\nUMAPS SANTO TOMAS HUATZINDEO SALVATIERRA GUANAUJUATO, REFORMA # 13 TEL: 01466S-50-60",
+        "file_ext": ".jpeg",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "Jos\u00e9 Juan Robledo Romero",
+          "hospital_or_clinic": null,
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": "SANO",
+          "treatment": null,
+          "doctor_name": "M.P.S.S. Cervantes Flores Cristina"
+        }
+      },
+      {
+        "id": "5ec066ef-7217-40d5-b765-a6df1f541352",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 22/supporting1.md",
+        "text": "**Current date is: 2015-11-11**\n\n**Nombre**: Jos\u00e9 Juan Robledo Romero  \n**Referencia de Reserva**: TRN-99563744  \n**Precio**: \u20ac37  \n**Tren**: ETN Primera Plus 1026  \n**Operador**: Primera Plus  \n**Salida**: 2015-10-19 11:45 (hora local)  \n**Desde**: Celaya, GTO  \n**Hacia**: Guadalajara, JAL  \n**Asiento**: 10B (Primera Clase)  \n**Tipo de Tarifa**: Regular  \n**Reservado el**: 2015-10-10 14:32  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 146.822911,
+    "error": null
+  },
+  {
+    "claim_id": "claim 23",
+    "claim_description": "I am writing to request a refund for a hotel reservation that I was unable to use on December 14, 2015, due to a medical emergency involving my daughter.\n\nOn that day, she was taken to the emergency department at the Hospital Sagrado Coraz\u00f3n de Jes\u00fas in Quevedo, Ecuador, where she was diagnosed with a severe headache (ICD10: G44.X) and prescribed 24 hours of strict bed rest. This unexpected health issue required my full attention, and as a result, we were unable to check in to the hotel as originally planned.\n\nI have attached the official medical certificate issued by the attending physician for verification. I kindly ask for your consideration in processing a refund or credit for a future booking.\n\nThank you for your understanding.",
+    "expected_decision": "UNCERTAIN",
+    "acceptable_decision": "DENY",
+    "ground_truth_explanation": "the document has weird dating (2016 in the bottom)",
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with the provided documents. The medical certificate supports the medical emergency, and the booking details confirm the hotel reservation was affected. There are no exclusions or inconsistencies in the claim or supporting documents.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "c1082b42-539d-4c6e-9f63-887f078155fa",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 23/Spanish_medical_11.webp",
+        "text": "Ministerio\nde Salud P\u00fablica\nCOORDINACION ZONAL DE SALUD 5\nHospital Sagrado Coraz\u00f3n de Jes\u00fas\nUnidad de Estad\u00edstica\nCERTIFICACI\u00d3N\nEL SUSCRITO MEDICO RESIDENTE DE EMERGENCIA DEL HOSPITAL\nSAGRADO CORAZON DE JESUS-QUEVEDO.\nCERTIFICA.-\nQue la paciente PILLASAGUA CANO AMARILIS ESTELA, de 14 a\u00f1os de edad,\nfue atendida por el servicio de Emergencia esta casa de salud, el d\u00eda 14 de\nDiciembre del 2015, por presentar:\nCEFALEA (CIE10:G44.X)\nSe recomienda reposo absoluto por el lapso de 24 horas, salvo\ncomplicaciones posteriores.\nFaculto a la interesada dar el uso que estime conveniente a la presente\ncertificaci\u00f3n legal.\nQuevedo, 5 de Enero del 2016.\n1SAOSIN4\nMEDICO RESIDENTE\nAREA DE EMERGENCIA\nHOSPITAL SAGRADO CORAZON DE JESUS\nAV.GUAYACANES N.40O PARRQ. 7 DE OCTUBRE QUEVEDO\nTELEFONO 593\n5(2) 750373\nhospitaldequevedo@hotmail.com\nwww.msp.gob.ec",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "PILLASAGUA CANO AMARILIS ESTELA",
+          "hospital_or_clinic": "Hospital Sagrado Coraz\u00f3n de Jes\u00fas",
+          "admission_date": "14 de Diciembre del 2015",
+          "discharge_date": null,
+          "report_issuing_date": "5 de Enero del 2016",
+          "diagnosis": "CEFALEA (CIE10:G44.X)",
+          "treatment": "Reposo absoluto por el lapso de 24 horas, salvo complicaciones posteriores.",
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "e9ca70ef-89eb-4b61-937a-541705ff46ce",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 23/supporting1.md",
+        "text": "**Current date is: 2016-01-03**\n\n**Name**: Esteban Pillasagua  \n**Booking Ref**: HTL-77123391  \n**Price**: \u20ac122  \n**Hotel**: Hotel Monteverde Boutique  \n**Location**: Quevedo, Ecuador  \n**Check-in**: 2015-12-14  \n**Check-out**: 2015-12-16  \n**Guests**: 2 adults  \n**Room Type**: Standard Double Room  \n**Booked on**: 2015-11-22 18:03  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 199.768087,
+    "error": null
+  },
+  {
+    "claim_id": "claim 24",
+    "claim_description": "To whom it may concern,\n\nI am writing to request a refund for a train journey I was unable to take on February 2, 2017, due to a medical issue that worsened the day before travel.\n\nWhile I did not seek medical attention immediately, the following day I visited the Hospital General Docente Calder\u00f3n in Quito and was diagnosed with sinusitis (ICD-10: J66). I had been experiencing symptoms for several days, but on the morning of the trip, I felt too unwell to travel and made the difficult decision to stay home.\n\nThe medical certificate issued by Dr. Elizabeth Cueva confirms my condition and the consultation on February 5, 2017. I understand the appointment was not on the same day as the scheduled trip, but I hope you will consider the documentation as valid support for my request. The illness clearly impacted my ability to travel.",
+    "expected_decision": "UNCERTAIN",
+    "acceptable_decision": "APPROVE",
+    "ground_truth_explanation": "minor date problem - appointment is 3 days after the flight",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is denied because the medical issue occurred before the trip date, and the medical certificate does not confirm the condition was severe enough to prevent travel on the scheduled date. The policy requires a medical emergency that prevents travel, but the diagnosis was made after the trip date and does not establish a causal link to the inability to travel on February 2, 2017.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "6238533e-f4ba-4c93-99f9-1e46462c0fde",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 24/Spanish_medical_12.webp",
+        "text": "m\nMinisterio\nHOSPITAL GENERAL DOCENTE CALDERON\nde Salud P\u00fablica\nCERTIFICADO MEDICO\nQuito, 05 de febrero del 2017\nCertifico, que la se\u00f1or: GUANOTU\u00d1A TOALOMBO JORDY\nSTALIN, con numero de cedula: 1751406131, con HCL\n1410,acude al, HOSPITAL GENERAL DOCENTE\nCALDERON HIERRO a la \u00e1rea de MEDICINA GENERAL ,\ncon diagn\u00f3stico de SINUSITIS CIE 10 (J 66), finalidad de\ndar a conocer que la paciente tuvo cita desde las 11:45 AM\nhasta las 1:30 PM\n1 Ministerio\nde Salud Publica\nHOSPITAL GENERAL DOCENTE CALDERON\nROSPITALDOCENTE CALDEROIN\nMED. SENENAL\nDra Eldahoth Che\nDra. ELIZABETH CUEVA\nHOSPITAL GENERAL DOCENTE CALDERON",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "GUANOTU\u00d1A TOALOMBO JORDY STALIN",
+          "hospital_or_clinic": "HOSPITAL GENERAL DOCENTE CALDERON",
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": "05 de febrero del 2017",
+          "diagnosis": "SINUSITIS CIE 10 (J 66)",
+          "treatment": null,
+          "doctor_name": "Dra. ELIZABETH CUEVA"
+        }
+      },
+      {
+        "id": "b4be9940-8dc2-41c1-81a1-c60edea64836",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 24/supporting1.md",
+        "text": "**Current date is: 2017-02-21**\n\n**Name**: GUANOTU\u00d1A TOALOMBO JORDY STALIN  \n**Booking Ref**: TRN-11047622  \n**Price**: \u20ac29  \n**Train**: Tren Ecuador Expreso 302  \n**Operator**: Empresa de Ferrocarriles Ecuatorianos  \n**Departure**: 2017-02-02 08:00 (local)  \n**From**: Quito  \n**To**: Riobamba  \n**Seat**: Coach B, Seat 7A  \n**Fare Type**: Turista  \n**Booked on**: 2017-01-05 15:46  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 202.475736,
+    "error": null
+  },
+  {
+    "claim_id": "claim 25",
+    "claim_description": "Due to an unexpected dental emergency that occurred on the morning of July 12, 2024, I was forced to cancel my trip and could not make use of the hotel reservation made through Booking.com.\n\nThe emergency appointment was necessary to treat an acute abscess, which required immediate intervention, as confirmed by the attached dental certificate.\n\nI am therefore requesting a refund for the unused booking.\n\nKind regards,\nDaniel M\u00fcller",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "medical document missing",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is for a dental emergency, but the policy requires a medical emergency to be covered. A dental emergency is not considered a covered reason under the policy unless explicitly stated. Additionally, the supporting documents do not include a medical report confirming the dental emergency as a medical emergency, which is a required supporting document for this type of claim.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "4554c435-b4e5-4589-854e-68aa64dd085f",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 25/booking confirmation 1.jpg",
+        "text": "BKG*Hotel at Booking.c\n12.07.2024 11:35\n-1 594.44 \u20ac\nBalance: 33.87 m\nCashback: +14.9 AZN\nOperation\ndocument",
+        "file_ext": ".jpg",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "guest_name": null,
+          "booking_reference": "BKG*Hotel at Booking.c",
+          "booking_platform": "Booking.c",
+          "price": "-1 594.44 \u20ac",
+          "location": null,
+          "check_in_date": "12.07.2024",
+          "check_out_date": null,
+          "number_guests": null,
+          "booked_on": "11:35"
+        }
+      },
+      {
+        "id": "b3b260d6-b131-4abb-89ab-03d9df445471",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 25/supporting1.md",
+        "text": "**Current date is: 2024-08-15**\n\n**Name**: Daniel M\u00fcller  \n**Booking Ref**: BKG-20240712-1155  \n**Price**: \u20ac1594.44  \n**Booking Platform**: Booking.com  \n**Payment Date**: 2024-07-12 11:35  \n**Hotel Name**: Hotel Vistaluna Milano  \n**Check-in Date**: 2024-07-12  \n**Check-out Date**: 2024-07-16  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 110.659677,
+    "error": null
+  },
+  {
+    "claim_id": "claim 3",
+    "claim_description": "To whom it may concern,\n\nI am filing a claim for reimbursement of my flight, which I was unable to take due to a sudden medical emergency that required hospitalization and surgery.\n\nOn August 13, 2011, I was admitted to Clinique M\u00e9dicale de Bassam for acute pelvic pain, cardiac distress, and gallbladder complications. The attending physician, Dr. Kouassi Kone Francois, diagnosed me with biliary colic and cholelithiasis and ordered an urgent surgical intervention. Due to this, I could not proceed with my scheduled travel.\n\nPlease find attached the official hospitalization certificate as proof of my condition. I request a refund of the flight.\n\nSincerely,  \nEvelyne Kacou Meitiale",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with the provided documents. The medical emergency is supported by a hospitalization certificate, and all required elements are present. There are no inconsistencies, ambiguities, or exclusions. The claim was submitted within the policy period and is for a covered reason (medical emergency).",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "6fef1633-f55c-4c56-aae9-0d1deed2b01e",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 3/French_medical_5.webp",
+        "text": "CLINIQUE MEDICALE DE BASSAM\nADRESSE GEO : GRAND BASSAM, ROUTE DE BONOUA\nADRESSE POSTALE : BP 174 GRAND BASSAM\nTEL : +225 04 01 24 11\nFAX : +225 66 30 40 57\nEMAIL : cliniquemedicale@live.fr\nCERTIFICAT D'HOSPITALISATION\nJe soussign\u00e9, docteur KOUASSI KONE FRANCOIS M\u00e9decin chef de la clinique\nm\u00e9dicale de Grand-Bassam que l'\u00e9tat de sant\u00e9 de Mme KACOU MEITIALE\nEVELYNE n\u00e9cessite une hospitalisation et une op\u00e9ration chirurgicale dans notre\n\u00e9tablissement.\nElle a \u00e9t\u00e9 admise dans notre clinique le13 Ao\u00fbt 2011\nCAUSES : douleurs pelviennes, crise cardiaque, calcul biliaire, et chol\u00e9 lithiase.\nLes frais d'hospitalisation et de prestation chirurgicale s'\u00e9l\u00e8vent \u00e0 : 491 300 FCFA\nSalon infirmier\n45 000 FCFA\nPrestations\n220 000 FCFA\nDroit d'h\u00e9bergement\n70 000 F CFA\n\u00c9quipe chirurgicale (un chirurgien, 1 \u00e9quipe de soins intensif) /\n130 000 F CFA\nMat\u00e9riel chirurgical (plaque et des vis)\n/\n156 300 F CFA\nNB : ces frais de prestation chirurgicale ne sont pas n\u00e9gociables et doivent \u00eatre avant la\nfin de l'op\u00e9ration, afin de pouvoir mettre \u00e0 disposition de la patiente tout le n\u00e9cessaire.\nFait \u00e0 GRAND BASSAM\nURGENT\nCLINQUE MEDICALE DE BASSAM\nDr KOUASSI KONE FRANCOIS\nDATE:15/01201",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "Mme KACOU MEITIALE EVELYNE",
+          "hospital_or_clinic": "CLINIQUE MEDICALE DE BASSAM",
+          "admission_date": "13 Ao\u00fbt 2011",
+          "discharge_date": null,
+          "report_issuing_date": "15/01201",
+          "diagnosis": "douleurs pelviennes, crise cardiaque, calcul biliaire, et chol\u00e9 lithiase",
+          "treatment": "hospitalisation et op\u00e9ration chirurgicale",
+          "doctor_name": "Dr KOUASSI KONE FRANCOIS"
+        }
+      },
+      {
+        "id": "f9e2cd38-1e8e-44ec-85f2-e49d470fab7b",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 3/supporting1.md",
+        "text": "**Current date is: 2011-09-01**\n\nName: Kacou Meitiale Evelyne  \nBooking Reference: UY-11238944  \nFlight Number: AF703  \nAirline: Air France  \nDeparture: 2011-08-13 19:45 (local)  \nOrigin: Abidjan F\u00e9lix Houphou\u00ebt-Boigny International Airport (ABJ)  \nDestination: Paris Charles de Gaulle Airport (CDG)  \nFare Type: Economy Class  \nTicket Cost: \u20ac624  \nDate of Booking: 2011-01-05  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 184.582679,
+    "error": null
+  },
+  {
+    "claim_id": "claim 4",
+    "claim_description": "Dear Sir or Madam,\n\nI am requesting reimbursement for a flight I was unable to take due to a sudden illness in December. I had planned to travel for the holidays but became unwell just days before my departure.\n\nOn December 21st, 2022, I was examined by a doctor in Brussels and was declared unfit to work from December 22 through December 24 due to illness. A medical certificate was issued at the time (attached). Although the illness was not prolonged, I was advised to rest and avoid travel until fully recovered.\n\nAs a result, I had to cancel my flight originally scheduled for December 23, 2022. Please find my booking and medical certificate enclosed.\n\nI hope this qualifies under the CFSR policy.\n\nThank you for your help,  \nLouis Ndembele",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "name is redacted",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The medical certificate does not include the patient's name, which is required for verification. The claim cannot be fully verified due to missing information in the supporting documents.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "6b576d98-473e-404f-9833-f4d50a343656",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 4/Belgian_medical_1.webp",
+        "text": "examin\u00e9 personnellement ce jour,\nM.\net l'avoir reconnu(e) incapable de\ntravailler\nfr\u00e9quenter les cours\nfr\u00e9quenter les cours de gymnastique/natation\n0\nZL\n22012\n24\ndu\n. au\n\ninclus,\npour cause de: maladieaccident \u2022 prolongation.\nSortie: autoris\u00e9e interdite.\nSauf complications, la reprise des occupations peut \u00eatre\ntotalement\npartiellement\npr\u00e9vue le ..\n2014\nLe\nSignature\nCachet\nDr M.\n:\n72. AV.I\n1020 Bruxelies\nT\u00e9l.",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": null,
+          "hospital_or_clinic": null,
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "Dr M."
+        }
+      },
+      {
+        "id": "be9ed69f-f38d-40d8-9576-9f54fb264d77",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 4/supporting1.md",
+        "text": "**Current date is: 2022-12-28**\n\n**Name**: Louis Ndembele  \n**Booking Ref**: SN20455893  \n**Operator**: Brussels Airlines  \n**Departure**: 2022-12-23 15:10 (local)  \n**From**: Brussels Airport (BRU)  \n**To**: Abidjan F\u00e9lix-Houphou\u00ebt-Boigny International Airport (ABJ)  \n**Fare Type**: Economy  \n**Ticket Price**: \u20ac547 (paid)  \n**Booked on**: 2022-10-02 09:33  ",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 114.636228,
+    "error": null
+  },
+  {
+    "claim_id": "claim 5",
+    "claim_description": "Hi there,\n\nI\u2019m writing to explain why I had to cancel my flight on such short notice.\n\nOn October 31st, I suddenly felt really shitty while at work at the retirement home (Casa di Riposo Sant\u2019Anna). I left around 12:30 PM and was checked out by the doctor on site, Dr. Lucini Cristina. She confirmed I wasn\u2019t in a condition to keep working or travel and told me to follow up with my own doctor. I've attached her note here.\n\nUnfortunately, my flight to Palermo was scheduled for the next morning, and I just wasn\u2019t physically up for it. I had to cancel the whole trip. I\u2019m hoping this qualifies under the medical emergency clause of my travel insurance.\n\nThanks in advance for your help,  \nOlivier Bayante",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "The claim is denied because the medical report does not include the patient's name, which is required for verification. The claim cannot be fully verified without this information, and the policy requires valid supporting documentation such as a medical certificate with the patient's name and details of the medical emergency.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "ebcc7227-f473-4f84-9711-ae283ef3541c",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 5/Italian_medical_2a.jpg",
+        "text": "31, X. 201\nSij. Bopuh Oliviers,\nhonae il pario di Covo20\nlle 020 12.30 Coucueuodo\nexelgio aeu\n mivs of curowe.\nCASA DE RUCOVERO\nFONDAZIONE\nSANTAMARIAAUSILIATRICE\nONLUS\nUCNI CRSEINA",
+        "file_ext": ".jpg",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": null,
+          "hospital_or_clinic": "CASA DE RUCOVERO FONDAZIONE SANTAMARIAAUSILIATRICE ONLUS UCNI CRSEINA",
+          "admission_date": null,
+          "discharge_date": null,
+          "report_issuing_date": null,
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "b30684fc-5429-47c7-9b41-b8ee0d9c1b9e",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 5/supporting1.md",
+        "text": "**Current date is: 2011-11-05**\n\n**Name**: Olivier Bayante  \n**Booking Ref**: AZ88124933  \n**Operator**: Alitalia  \n**Departure**: 2011-11-01 08:10 (local)  \n**From**: Milano Linate Airport (LIN)  \n**To**: Palermo Falcone\u2013Borsellino Airport (PMO)  \n**Fare Type**: Economy Light  \n**Ticket Price**: \u20ac142 (paid)  \n**Booked on**: 2011-10-10 16:08  ",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 101.264888,
+    "error": null
+  },
+  {
+    "claim_id": "claim 6",
+    "claim_description": "Hi,\n\nI'm reaching out early to cancel our upcoming flight for August 15. My partner, Jorge Velosa Ruiz, has been hospitalized since the night of July 22 after we rushed to the ER at Cl\u00ednica Reina Sof\u00eda. He was moved to a hospital room the next morning and is still admitted.\n\nWe were supposed to fly to Miami together on the 15th, but there's no way he'll be discharged or fit to travel by then. I\u2019ve attached the certificate from the clinic that confirms everything.\n\nI wanted to let you know ahead of time since we already know we won\u2019t be able to make the trip. Hoping this qualifies under the medical emergency policy for cancellation.\n\nThanks for understanding,  \nMarta Rojas Valbuena",
+    "expected_decision": "UNCERTAIN",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the flight is in 2 weeks from now, it is not clear if the person will still be hospitalized or otherwise unable to fly",
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required elements present, no inconsistencies, and no exclusions apply. The medical certificate confirms the hospitalization of Jorge Velosa Ruiz, and the booking details support the trip cancellation due to a medical emergency. The claim was submitted within the policy period and not late reported. The patient name matches across documents, and the incident is covered under the policy's medical emergency clause.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "efd0a598-5e2a-4c43-aac7-4ed72377e467",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 6/Spanish_medical_14.webp",
+        "text": "Clinica Colsanitas\nEL SUSCRITO JEFE DEL DEPARTAMENTO DE ESTAD\u00cdSTICA Y\nARCHIVO CL\u00cdNICO\nCERTIFICA\nQue de acuerdo con los registros cl\u00ednicos de la Clinica Reina Sof\u00eda el\npaciente VELOSA RUIZ JORGE LUIS identificado con C.C 19.092.121,\ningres\u00f3 a esta instituci\u00f3n al servicio de Urgencias el d\u00eda 22 de julio del 2017\nbajo la admisi\u00f3n U2017-42881 a las 22:18 horas, Y se traslad\u00f3 al servicio\nde Hospitalizaci\u00f3n el dia 23 de julio de 2017 a las 09:58 horas bajo la\nadmisi\u00f3n H2017-5918 y se encuentra actualmente hospitalizado en esta\ninstituci\u00f3n.\nLa presente se expide a solicitud del Se\u00f1ora ROJAS VALBUENA MARTA\nISABEL Identificada con C.C. 41.541.380 a los veinte siete (27) dias del\nmes de julio del 2017.\nAtentamente\nCl\u00ednica ColSanitas\nDEPARTAMENTO DE\nTADISTICA Y ARCHIVO\nJOSE ANTONIO RIASCOS CANO\nCOORDINADOR OPERATIVO\nCl\u00ednica Reina Sofia.\nNT. 800.149.3846",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "VELOSA RUIZ JORGE LUIS",
+          "hospital_or_clinic": "Clinica Reina Sof\u00eda",
+          "admission_date": "22 de julio del 2017",
+          "discharge_date": null,
+          "report_issuing_date": "veinte siete (27) dias del mes de julio del 2017",
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": null
+        }
+      },
+      {
+        "id": "362d7744-c6bc-4cdd-83cd-14ba39df555a",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 6/supporting1.md",
+        "text": "**Current date is: 2017-07-27**\n\n**Name**: Jorge Luis Velosa Ruiz  \n**Claimant**: Marta Isabel Rojas Valbuena (partner)  \n**Booking Ref**: AV21930422  \n**Operator**: Avianca  \n**Departure**: 2017-08-15 12:40 (local)  \n**From**: El Dorado International Airport (BOG)  \n**To**: Miami International Airport (MIA)  \n**Fare Type**: Economy \u2013 Flexible with documentation  \n**Ticket Price**: $482 (USD, paid)  \n**Booked on**: 2017-06-12 13:06  ",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 143.128593,
+    "error": null
+  },
+  {
+    "claim_id": "claim 7",
+    "claim_description": "Hi,\n\nI'm submitting this claim because my mom, Gloria Mi Nano Reyna, had to cancel her flight scheduled for September 13. She had been hospitalized at Cl\u00ednica S\u00e1nchez Ferrer starting August 13 and only just got discharged after we were supposed to leave.\n\nEven though we were hoping she\u2019d recover in time, her condition was still too fragile to travel. The hospital issued a certificate confirming her hospitalization, and I\u2019ve attached it here.\n\nWe had booked a trip from Trujillo to Buenos Aires, and unfortunately could not start it.\n\nThanks a lot for your support,  \nLuis Mi Nano",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the document is generally suspicious: stamp with signature seems photoshopped onto a non-printed document. the document mentions that the person was 'discharged on' but does not have the date.",
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required elements present, no inconsistencies, and no exclusions apply. The medical report confirms the hospitalization and discharge dates, and the booking details support the trip cancellation due to a medical emergency. The claim was submitted within the policy period and not late reported. The patient name matches across all documents, and the reason for cancellation is covered under the policy as a medical emergency.",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "c98aca25-1b6c-46a4-a6c1-b391a75b1647",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 7/Spanish_medical_15.webp",
+        "text": "SANNA\nTrujillo 15 de Setiembre de 2015\nCONSTANCIA DE HOSPITALIZACI\u00d3N\nPor la presente se hace constar que la paciente, GLoRIA\nEMPERATRIZ Mi NANO REYNA con 56 a\u00f1os de edad y con\nD.N.1.17906974; estuvo hospitalizada en nuestra instituci\u00f3n,\ningresando el d\u00eda 13 de Agosto de 2015, siendo dada de alta el d\u00eda\nSe hace entrega de la presente para fines\nAeectce\nGlad J. Santtan N\u00fchiz\nHISTORIAS CLINICAS\nSANNA",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "GLORIA EMPE RATRIZ Mi NANO REYNA",
+          "hospital_or_clinic": "SANNA",
+          "admission_date": "13 de Agosto de 2015",
+          "discharge_date": "15 de Setiembre de 2015",
+          "report_issuing_date": "15 de Setiembre de 2015",
+          "diagnosis": null,
+          "treatment": null,
+          "doctor_name": "Glad J. Santtan N\u00fchiz"
+        }
+      },
+      {
+        "id": "502517bc-2e47-4560-9126-8fba2a1861b3",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 7/supporting1.md",
+        "text": "**Current date is: 2015-09-17**\n\n**Name**: Gloria Emperatriz Mi Nano Reyna  \n**Claimant**: Luis Mi Nano (son)  \n**Booking Ref**: LA51073211  \n**Operator**: LATAM Airlines  \n**Departure**: 2015-09-13 08:30 (local)  \n**From**: Trujillo Airport (TRU)  \n**To**: Buenos Aires Ministro Pistarini (EZE)  \n**Fare Type**: Economy \u2013 Saver  \n**Ticket Price**: $371 USD (paid)  \n**Booked on**: 2015-05-04 11:22  ",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": false,
+    "match_type": "mismatch",
+    "processing_time_seconds": 173.146623,
+    "error": null
+  },
+  {
+    "claim_id": "claim 8",
+    "claim_description": "To whom it may concern,\n\nI am submitting this claim regarding a flight I was unable to board on December 14, 2024, due to an unforeseen medical emergency. I experienced acute abdominal pain the night before the flight and was admitted to Pacific Grove Medical Center in Los Angeles.\n\nI have attached the official hospital admission and discharge documentation. I was advised not to travel for at least 48 hours following the treatment.\n\nThe flight in question was booked through my employer\u2019s travel portal.\n\nI kindly request reimbursement or rescheduling of this ticket in accordance with my insurance policy\u2019s coverage for medical emergencies.\n\nSincerely,\nNaomi Feldman",
+    "expected_decision": "DENY",
+    "acceptable_decision": null,
+    "ground_truth_explanation": "the medical document is in text form. this MUST be denied.",
+    "pipeline_decision": "DENY",
+    "pipeline_explanation": "Supporting document that requires official issuer is in invalid format (free text): /Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 8/hospital admission1.md",
+    "policy_context": "\nIf your trip is cancelled or rescheduled for a covered reason, you may be eligible for compensation.\nExamples of covered reasons:\n- Jury duty\n- Medical emergency (must be supported by a medical report)\n- Theft or criminal incident (must be supported by a police report)\n- Other specified personal emergencies\n\nWhat's required:\n- Valid supporting documentation (e.g., medical certificate, police report, jury summon letter)\n- Proof of booking and amount paid\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "40146975-182d-4199-9965-38ba37253313",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 8/hospital admission1.md",
+        "text": "Pacific Grove Medical Center  \nEmergency Department \u2013 Patient Record  \nDate of Admission: 2024-12-13  \nTime of Arrival: 21:47  \nPatient Name: Naomi Feldman  \nDOB: 1992-03-08  \nAddress: 1184 Broadway Ave, Los Angeles, CA 90012  \nPatient ID: HSP-2218019  \n\nChief Complaint:  \n- Severe abdominal pain, radiating to lower right quadrant, nausea, fever.  \n\nInitial Assessment:  \n- Suspected acute appendicitis. Elevated WBC count.  \n\nProcedure/Intervention:  \n- Patient underwent observation and was administered IV fluids, antiemetics, and pain management.  \n- Surgical team consulted. Appendicitis ruled out; diagnosed with acute gastroenteritis.  \n\nDischarge Summary:  \nDate: 2024-12-14  \nTime: 16:35  \n- Condition: Stable  \n- Travel advised against for 48 hours due to risk of dehydration and recurrence of symptoms.  \n- Follow-up recommended in 3 days with primary care physician.  \n\nPhysician: Dr. Lucia Mendez  \nSignature: L. Mendez, MD\n",
+        "file_ext": ".md",
+        "requires_official_issuer": true,
+        "trustworthy": false,
+        "fraud_detection": null,
+        "extracted_fields": null
+      },
+      {
+        "id": "8c558ec1-d4a3-4234-919a-05afebfa080e",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 8/supporting1.md",
+        "text": "**Current date is: 2024-12-14**\n\nName: Naomi Feldman  \nBooking Ref: TCK-89473319  \nPrice: $128  \nFlight: SH4721  \nAirline: SkyHopper  \nDeparture: 2024-12-14 08:20 (local)  \nFrom: LAX (Los Angeles International Airport)  \nTo: ORD (Chicago O'Hare International Airport)  \nSeat: 18A (Economy)  \nFare Type: Corporate Flex  \nBooked on: 2024-11-28 14:02  \n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": null,
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 25.08425,
+    "error": null
+  },
+  {
+    "claim_id": "claim 9",
+    "claim_description": "I am writing to file a claim under my travel insurance policy for missing my flight originally scheduled for 29 July 2023. On that same day, I underwent emergency eye surgery (pterygium excision) at Centro M\u00e9dico Integral NOVAMEDIC, which rendered me unfit to travel and required a 15-day rest period.\n\nThe procedure was unplanned and medically necessary. I have attached the medical certificate, confirming the surgery and the rest period from 29 July to 12 August 2023.\n\nAs a result, I was unable to take my flight to Quito that afternoon. \n\nSince i was unable to take the flight, so please compensate me the full ticket price of 129 euros.\n\nThank you in advance",
+    "expected_decision": "APPROVE",
+    "acceptable_decision": null,
+    "ground_truth_explanation": null,
+    "pipeline_decision": "APPROVE",
+    "pipeline_explanation": "The claim is fully verifiable with all required documents. The incident is covered under the policy as a medical emergency, and the documents confirm the surgery and the rest period. There are no inconsistencies or exclusions, and the claim was submitted within the policy period. The fraud detection report indicates no issues, and the documents are consistent with the claim description.",
+    "policy_context": "\nIf you miss a scheduled departure or connection due to a covered reason, you may be compensated.\n\nExamples of covered reasons: \n- Traffic accident en route\n\nWhat's required:\n- Incident report or documentation explaining the cause of delay\n- Proof of booking\n\n\n\nYour claim may be **rejected** in the following cases:\n\n- Not a covered reason (e.g., voluntary changes to your travel)\n- Prior knowledge of the incident or reason before purchase\n- Outside policy period - e.g., incident occurred before coverage began or after it ended\n- Late reporting - claim submitted more than 30 days after policy expired (usually the day after you return from your trip)\n- Incomplete documentation - failure to provide necessary proof \n",
+    "processed_documents": [
+      {
+        "id": "3c7f19a8-515d-4879-a795-de951d9eec2b",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 9/medical 2.webp",
+        "text": "Novamedic\nDirecci\u00f3n KM. 2S Via Perimetral C.C. Mall el\nFertin - Subsuelo Local 11-21\nComtr Miulinn tatan\nTel\u00e9fono (042 597270 ext. 715\nGUAYAQUIL, 29 DE JULIO DEL 2023.\nCERTIFICADO\nMEDICO\nCertifico que \u00e9l o la paciente BASTIDAS ANGULO DAYSI MARiUXI c\u00e9dula de\nciudadania n\u00famero 0918395559 HC: 360799 fue intervenido (a) quir\u00fargicamente\nel 29 DE JULIO DEL 2023 por conjuntivo plastia PTERIGION (H110) en el\nCENTRO MEDICO INTEGRAL \"NOVAMEDIC\", UBICADO EN EL C.C, MALL EL\nFORTIN LOCAL 11-21, acreditada como prestadora externa del IESS, seg\u00fan\ncontrato\n21300900-SPSSG-0145-2015-\nCENTRO\nDE\nATENCION\nAMBULATORIA NOVAMEDIC -GUAYAS, por el cual se prescribe reposo\nm\u00e9dico de 15 d\u00edas (quince d\u00edas).\nA partir de hoy veintinueve de julio del dos mil veintitr\u00e9s (29-07-2023)\nhasta el doce de agosto del dos mil veintitr\u00e9s (12-08-2023). Despu\u00e9s de\nsus d\u00edas de reposo el paciente puede realizar todas sus actividades sin\nninguna limitaci\u00f3n con respecto a la cirug\u00eda.\nFECHA DE EGRESO:\n29-07-2023.\nNOMBRE DE EMPRESA:\nESCUELA FISCAL GIOVANNI PATRICIO CALLES\nLASCANO.\nACTIVIDAD LABORAL:\nDOCENTE.\nTIPO DE CONTINGENCIA:\nENFERMEDAD GENERAL.\nDIRECCION DOMICILIARIA:\nGUAYAQUIL - BATALLON DEL SUBURBIO CALLE\nH ENTRE 43 Y 44.\nNUMERO TELEFONICO:\n0959024326.\nCOD.CIE10: (H110)\nPTERIGION\nAtentamente.\nDr. William/Casfro Su\u00e1rez\nOFTALMOLOGO\nDR. WILLIAM CASTRO SU\u00c1REZ\nDR. CHRISTOPHER RODRIGUEZ\nCIRUJANO OFTALMOLOGO\nJEFE CL\u00cdNICO\nCl: 1307576908\nCl: 0916846173\nLibro: 2 \"A\" Folio: 1 No.: 1",
+        "file_ext": ".webp",
+        "requires_official_issuer": true,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": {
+          "patient_name": "BASTIDAS ANGULO DAYSI MARiUXI",
+          "hospital_or_clinic": "CENTRO MEDICO INTEGRAL \"NOVAMEDIC\"",
+          "admission_date": "29 DE JULIO DEL 2023",
+          "discharge_date": "29 DE JULIO DEL 2023",
+          "report_issuing_date": "29 DE JULIO DEL 2023",
+          "diagnosis": "PTERIGION",
+          "treatment": "conjuntivo plastia PTERIGION (H110)",
+          "doctor_name": "Dr. William/Casfro Su\u00e1rez, DR. WILLIAM CASTRO SU\u00c1REZ, DR. CHRISTOPHER RODRIGUEZ"
+        }
+      },
+      {
+        "id": "7c9fd199-ec09-4d53-9367-c4073fae52c6",
+        "name": "/Users/imagessi/Documents/marvelx/claim-processing-pipeline/data/claims/claim 9/supporting1.md",
+        "text": "**Current date is: 2023-08-13**\n\n**Name**: Daisy Mariuxi Bastidas Angulo  \n**Booking Ref**: EQT-8846721  \n**Price**: \u20ac129  \n**Flight**: EQ203  \n**Operator**: Equair  \n**Departure**: 2023-07-29 17:25 (local)  \n**From**: Jos\u00e9 Joaqu\u00edn de Olmedo International Airport (GYE)  \n**To**: Mariscal Sucre International Airport (UIO)  \n**Seat**: 20F (Economy Class)  \n**Booked on**: 2023-01-17 11:56\n",
+        "file_ext": ".md",
+        "requires_official_issuer": false,
+        "trustworthy": true,
+        "fraud_detection": "Nothing to report",
+        "extracted_fields": null
+      }
+    ],
+    "decision_match": true,
+    "match_type": "exact",
+    "processing_time_seconds": 204.62892,
+    "error": null
+  }
+]

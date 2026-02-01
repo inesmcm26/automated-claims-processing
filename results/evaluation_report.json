@@ -1,0 +1,32 @@
+{
+  "total_claims": 25,
+  "successful_evaluations": 25,
+  "failed_evaluations": 0,
+  "exact_matches": 17,
+  "acceptable_matches": 0,
+  "mismatches": 8,
+  "accuracy": 0.68,
+  "exact_accuracy": 0.68,
+  "total_approved": 10,
+  "total_denied": 14,
+  "total_uncertain": 1,
+  "approve_correct": 5,
+  "approve_incorrect": 2,
+  "deny_correct": 11,
+  "deny_incorrect": 2,
+  "uncertain_correct": 1,
+  "uncertain_incorrect": 4,
+  "avg_processing_time": 124.96738232000001,
+  "mismatched_claims": [
+    "claim 11",
+    "claim 13",
+    "claim 21",
+    "claim 23",
+    "claim 24",
+    "claim 5",
+    "claim 6",
+    "claim 7"
+  ],
+  "failed_claims": [],
+  "timestamp": "2026-02-01T15:59:17.567925"
+}
