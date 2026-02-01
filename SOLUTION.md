@@ -81,6 +81,12 @@ This is the final step of the pipeline. It combines the relevant policy section 
 
 A LLM then evaluates all of this context and produces a final decision on the claim, along with a short justification explaining how the policy was applied.
 
+
+**Inputs:** Document analysis (extracted fields from documents) + selected policy section + fraud detection report
+
+**Output:** Decision + explanation
+
+
 ## Reasons Behind Design Decisions
 
 This solution is designed as a pre-defined, step-by-step pipeline rather than relying on autonomous AI agents. While agent-based approaches - where a model can freely orchestrate tools, iterate, and decide when it has reached an answer - are increasingly popular, I don’t think that would be the best fit for this problem. Insurance claim processing is high-stakes: each step must be predictable, traceable, and auditable, and certain checks must always run in a specific order. Allowing full model autonomy would make the workflow harder to control, increase the risk of skipped or misapplied checks, and reduce the guarantees needed around correctness and consistency.
