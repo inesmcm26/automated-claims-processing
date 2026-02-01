@@ -4,6 +4,8 @@
 
 The claim processing pipeline was evaluated against a benchmark dataset of 25 insurance claims with varying complexity levels, including medical emergencies, travel cancellations, and fraud indicators.
 
+Results can be found in the `results/` folder, including detailed per-claim results (`evaluation_results.json`), a summary of those per-claim results (`evaluation_results_summary.json`), and an evaluation report (`evaluation_report.json`).
+
 ### Performance Metrics
 
 - **Total Claims Processed**: 25
