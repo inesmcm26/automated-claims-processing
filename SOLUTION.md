@@ -89,15 +89,19 @@ A LLM then evaluates all of this context and produces a final decision on the cl
 
 ## Reasons Behind Design Decisions
 
-This solution is designed as a pre-defined, step-by-step pipeline rather than relying on autonomous AI agents. While agent-based approaches - where a model can freely orchestrate tools, iterate, and decide when it has reached an answer - are increasingly popular, I don’t think that would be the best fit for this problem. Insurance claim processing is high-stakes: each step must be predictable, traceable, and auditable, and certain checks must always run in a specific order. Allowing full model autonomy would make the workflow harder to control, increase the risk of skipped or misapplied checks, and reduce the guarantees needed around correctness and consistency.
+This solution is intentionally designed as a pre-defined, step-by-step pipeline rather than relying on autonomous AI agents. While agent-based approaches - where a model can freely orchestrate tools, iterate, and decide when it has reached an answer - are increasingly popular, I don’t think they are the best fit for this problem.
 
-Another consideration is the use of open-source LLMs running locally. It is important that every call is clearly defined and kept as simple as possible. This ensures that a model with limited capabilities, and without multi-modal support, can perform its task reliably and with a higher success rate.
+Insurance claim processing is a high-stakes domain. Each step must be predictable, traceable, and auditable, and certain checks must always run in a specific order. Allowing full model autonomy would make the workflow harder to control, increase the risk of skipped or misapplied checks, and weaken the guarantees around correctness and consistency.
 
-For these reasons, the system is structured as a step-by-step pipeline, with each LLM call clearly scoped and constrained, prioritizing reliability, traceability, and control over autonomy.
+Another key consideration is the use of open-source LLMs running locally. In this setup, every model call needs to be clearly defined and kept as simple as possible. Narrowly scoped, well-constrained prompts make it more likely that models with limited capabilities—and without multimodal support—can perform their tasks reliably.
+
+For these reasons, the system is structured as a sequential pipeline, with each LLM call having a clear responsibility. This prioritizes reliability, traceability, and control over autonomy.
 
 ### Note on Generalization vs Reliability
 
-The pipeline was intentionally split into small, very focused steps to ensure simplicity, predictability, and traceability. While highly structured pipelines can be less generalizable to new cases, the steps implemented here are robust enough to handle unseen claims. Ultimately, a single call to a very powerful multi-modal LLM with a very large context window could handle all possible claims and be the most "general" solution, but this design finds a middle ground: it is customized enough to work reliably for this dataset while still general enough to adapt to new cases.
+The pipeline is intentionally split into small, focused steps to maximize simplicity and predictability. While highly structured pipelines can be less general than fully autonomous approaches, the steps implemented here are robust enough to handle unseen claims.
+
+In theory, a single call to a very powerful multimodal LLM with a large context window and very good prompt engineering could handle all possible cases and offer maximum generalization. This design instead aims for a middle ground: specialized enough to work reliably for this dataset, while still general enough to adapt to new claims.
 
 ## Chosen stack and models
 
