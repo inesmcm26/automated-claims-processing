@@ -4,7 +4,7 @@
 
 The solution is pipeline with a fixed sequence of steps for processing insurance claims.
 
-![Pipeline Diagram](images/pipeline_diagram.png)
+![Pipeline Diagram](images/pipeline_diagram.jpg)
 
 The pipeline has the following steps:
 
